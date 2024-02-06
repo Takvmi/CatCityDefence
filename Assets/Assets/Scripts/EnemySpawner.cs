@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
     
     void Start()
     {
+        Debug.Log("TESTING GIT LINK");
         GameManager.Instance.StartGame();
     }
 
