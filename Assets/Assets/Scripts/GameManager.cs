@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private static readonly object Padlock = new object();
 
     public bool GameGoing;
+    public List<GameObject> enemiesList = new List<GameObject>();
     
     public static GameManager Instance
     {

@@ -9,6 +9,8 @@
           <e p="Models" t="Include" />
           <e p="Prefabs" t="Include" />
           <e p="Scripts" t="Include">
+            <e p="BaseBullet.cs" t="Include" />
+            <e p="BaseTurret.cs" t="Include" />
             <e p="DefenseLocation.cs" t="Include" />
             <e p="DirectionChanger.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />

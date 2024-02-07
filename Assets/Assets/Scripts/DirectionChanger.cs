@@ -31,7 +31,6 @@ public class DirectionChanger : MonoBehaviour
             {
                 enemyMovementScript.movementDirection = direction;
                 enemyMovementScript.ChangeRotation(rotation);
-                enemyMovementScript.DamageEnemy(1);
             }
         }
     }

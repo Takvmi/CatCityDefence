@@ -90,6 +90,7 @@ public class EnemyController : MonoBehaviour
 
     public void DestroyEnemy()
     {
+        GameManager.Instance.enemiesList.Remove(this.GameObject());
         Destroy(body);
         Destroy(this.gameObject);
     }

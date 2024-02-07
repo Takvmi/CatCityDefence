@@ -27,7 +27,8 @@ public class EnemySpawner : MonoBehaviour
 
             if (elapsedTime >= spawnInterval)
             {
-                var newEnemy = SpawnPrefabInstance(enemyZeroPrefab); 
+                var newEnemy = SpawnEnemy(enemyZeroPrefab);
+                GameManager.Instance.enemiesList.Add(newEnemy);
                 var newEnemyController = newEnemy.GetComponent<EnemyController>();
                 //newEnemyController.health = 4;
                // newEnemyController.movementSpeed = 0.8f;
@@ -36,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private GameObject SpawnPrefabInstance(GameObject enemyToSpawn)
+    private GameObject SpawnEnemy(GameObject enemyToSpawn)
     {
         spawnedCount++;
         return Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
